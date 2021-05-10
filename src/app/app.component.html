@@ -1,0 +1,23 @@
+<div class="example-container">
+  <p></p>
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #sidenav style="width: 200px">
+  
+        <img src="assets/img/BANCO.png" width="128" style="margin-left: 20px">
+        <button mat-menu-item  (click)="sidenav.toggle()" style="cursor: pointer height 200px;" routerLink="/profesor">
+            <mat-icon>group</mat-icon>
+            <span>Usuario</span>
+        </button>
+        <mat-divider></mat-divider> 
+        
+    </mat-sidenav>
+    
+  
+    
+         
+  
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>  
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
